@@ -1,3 +1,5 @@
+import image from '../../assets/rectangle.svg'
+
 export default `
 <!DOCTYPE html>
 <html lang="en">
@@ -10,12 +12,14 @@ export default `
     </head>
     <body class="container">
         <div class="mobile-container">
-            {{> header}}
+            <header>
+            <img src="${image}" alt="rectangle">
+            </header>
             <main class="main">
                 <ul class="news-list">
                     {{#each posts}}
                     <li>
-                        {{> post-card}}
+                        {{> news-card this}}
                     </li>
                     {{/each}}
                 </ul>

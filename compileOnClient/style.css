@@ -1,5 +1,5 @@
 *,
-::after
+::after,
 ::before {
     box-sizing: border-box;
 }
@@ -26,6 +26,47 @@ h2 {
     width: 320px;
     margin: 0 auto;
     background-color: #F9F9F9;
+}
+
+.main {
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.news-card {
+    max-width: 320px;
+    height: 400px;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.news-card__title {
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+.news-card.news-card_blue {
+    color: white;
+    background-color: #5D71DD;
+}
+
+.news-card.news-card_blue .news-card_tag {
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .tag.tag_blue {
